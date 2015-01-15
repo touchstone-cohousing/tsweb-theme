@@ -11,7 +11,11 @@
     <div id="wrapper" class="hfeed">
       <header id="header" role="banner">
         <section id="branding">
-          <div id="site-title"><?php if ( ! is_singular() ) { echo '<h1>'; } ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'blankslate' ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a><?php if ( ! is_singular() ) { echo '</h1>'; } ?></div>
+          <div id="site-title">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( get_bloginfo( 'name' ), 'blankslate' ); ?>" rel="home">
+              <img src="<?php bloginfo('template_directory'); ?>/images/logo-big.png" alt="Logo" width="513" height="88" />
+            </a>
+          </div>
           <div id="site-description"><?php bloginfo( 'description' ); ?></div>
         </section>
       </header>
