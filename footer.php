@@ -1,11 +1,16 @@
-<div class="clear"></div>
-</div>
-<footer id="footer" role="contentinfo">
-<div id="copyright">
-<?php echo sprintf( __( '%1$s %2$s %3$s. All Rights Reserved.', 'blankslate' ), '&copy;', date( 'Y' ), esc_html( get_bloginfo( 'name' ) ) ); echo sprintf( __( ' Theme By: %1$s.', 'blankslate' ), '<a href="http://tidythemes.com/">TidyThemes</a>' ); ?>
-</div>
-</footer>
-</div>
-<?php wp_footer(); ?>
-</body>
+        <div class="clear"></div>
+      </div>
+      <footer id="footer" role="contentinfo">
+        <div id="copyright">
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">
+            <img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a>
+          <br/>
+          All content licensed under a
+          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+        </div>
+      </footer>
+    </div>
+    <?php wp_footer(); ?>
+  </body>
 </html>
