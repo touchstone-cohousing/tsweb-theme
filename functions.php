@@ -8,7 +8,7 @@ add_theme_support( 'post-thumbnails' );
 global $content_width;
 if ( ! isset( $content_width ) ) $content_width = 640;
 register_nav_menus(
-array( 'main-menu' => __( 'Main Menu', 'blankslate' ) )
+array( 'main-menu' => __( 'Main Menu'), 'extra-menu' => __( 'Members Menu' ) )
 );
 }
 add_action( 'wp_enqueue_scripts', 'blankslate_load_scripts' );
@@ -51,7 +51,7 @@ function blankslate_custom_pings( $comment )
 $GLOBALS['comment'] = $comment;
 ?>
 <li <?php comment_class(); ?> id="li-comment-<?php comment_ID(); ?>"><?php echo comment_author_link(); ?></li>
-<?php 
+<?php
 }
 add_filter( 'get_comments_number', 'blankslate_comments_number' );
 function blankslate_comments_number( $count )

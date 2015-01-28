@@ -23,6 +23,19 @@ body {
   background-color: #567497;
 }
 
+p {
+  line-height: 140%;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #36569c;
+}
+
+em {
+  font-style: italic;
+}
+
 #wrapper {
   width: 915px;
   margin: 20px auto;
@@ -45,6 +58,30 @@ body {
   display: inline-block;
 }
 
+#menu {
+  line-height: 140%;
+  margin-bottom: 20px;
+}
+
+#menu a {
+  text-decoration: none;
+}
+
+#menu li.current_page_item {
+  background-color: #f3f3f3;
+}
+
+.menu-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: -5px;
+}
+
+#search {
+  margin-top: 20px;
+}
+
 #content {
   display: inline-block;
   width: 694px;
@@ -63,4 +100,59 @@ body {
 
 #footer a {
   color: #6666aa;
+}
+
+#content img {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #999;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #999;
+  padding: 7px;
+  background-color: #fff;
+}
+
+.entry-title {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+h2.entry-title {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+header .post-edit-link {
+  display: none;
+}
+
+img.content-image {
+  display: block;
+  margin: 25px auto;
+}
+
+div.content-image-row {
+  text-align: center;
+  margin: 25px 0;
+}
+
+
+/* HOME */
+
+.home h1.entry-title {
+  display: none;
+}
+
+div.slug {
+  display: block;
+  margin: 20px 100px;
+  text-align: center;
+}
+
+/* We use an h1 here for SEO */
+div.slug h1, div.slug p {
+  display: inline;
+  font-size: 12pt;
+  font-style: italic;
+  line-height: normal;
 }
