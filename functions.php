@@ -64,3 +64,15 @@ return count( $comments_by_type['comment'] );
 return $count;
 }
 }
+
+add_image_size( 'med-plus', 400 );
+add_image_size( 'med-plus-tall', 9999, 320 );
+
+add_filter( 'image_size_names_choose', 'my_custom_sizes' );
+
+function my_custom_sizes( $sizes ) {
+    return array_merge( $sizes, array(
+        'med-plus' => __( 'Medium Plus' ),
+        'med-plus-tall' => __( 'Medium Plus Tall' )
+    ) );
+}
