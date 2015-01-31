@@ -48,6 +48,10 @@ h2 {
   margin: 30px 0 10px 0;
 }
 
+strong {
+  font-weight: bold;
+}
+
 #wrapper {
   width: 915px;
   margin: 20px auto;
@@ -109,7 +113,7 @@ h2 {
 }
 
 #footer {
-  margin-top: 20px;
+  margin-top: 50px;
   text-align: center;
   font-size: 9px;
   line-height: 20px;
