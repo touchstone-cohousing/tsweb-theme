@@ -23,7 +23,7 @@ body {
   background-color: #567497;
 }
 
-p, ul {
+p, ul, ol {
   line-height: 140%;
   margin-bottom: 15px;
 }
@@ -38,14 +38,24 @@ em {
 
 ul {
   list-style: disc;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  margin-left: 25px;
+}
+
+ol {
+  list-style: decimal;
+  margin-left: 30px;
 }
 
 h2 {
   font-weight: bold;
-  font-weight: 14pt;
+  font-size: 14pt;
   margin: 30px 0 10px 0;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 12pt;
+  margin: 10px 0 10px 0;
 }
 
 strong {
