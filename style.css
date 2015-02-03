@@ -16,7 +16,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 body, input {
   font-family: "Open Sans", Helvetica, sans-serif;
-  color: #666;
+  font-size: 14px;
+  font-weight: 300;
+
+  color: #444;
 }
 
 body {
@@ -24,7 +27,7 @@ body {
 }
 
 p, ul, ol {
-  line-height: 140%;
+  line-height: 150%;
   margin-bottom: 15px;
 }
 
@@ -48,13 +51,13 @@ ol {
 
 h2 {
   font-weight: bold;
-  font-size: 14pt;
+  font-size: 15px;
   margin: 30px 0 10px 0;
 }
 
 h3 {
   font-weight: bold;
-  font-size: 12pt;
+  font-size: 13px;
   margin: 10px 0 10px 0;
 }
 
@@ -82,6 +85,7 @@ strong {
   width: 180px;
   padding: 10px;
   display: inline-block;
+  font-weight: 400;
 }
 
 #sidebar ul {
@@ -106,7 +110,7 @@ strong {
   font-size: 11px;
   text-transform: uppercase;
   margin-top: 10px;
-  margin-bottom: -5px;
+  margin-bottom: -2px;
 }
 
 #search {
@@ -183,7 +187,28 @@ div.slug {
 /* We use an h1 here for SEO */
 div.slug h1, div.slug p {
   display: inline;
-  font-size: 12pt;
+  font-size: 16px;
   font-style: italic;
   line-height: normal;
+}
+
+/* EMAIL LISTS */
+#mailman-lists .mailman-list {
+  line-height: 140%;
+  margin-bottom: 20px;
+}
+
+#mailman-lists .list-name {
+  font-weight: bold;
+}
+
+#mailman-lists a.show-link, #mailman-lists a.hide-link {
+  font-size: 80%;
+}
+
+#mailman-lists ul {
+  font-size: 90%;
+}
+
+#mailman-lists li {
 }
