@@ -207,6 +207,10 @@ div.slug h1, div.slug p {
   font-weight: bold;
 }
 
+#mailman-lists .list-name a {
+  text-decoration: none;
+}
+
 #mailman-lists a.show-link, #mailman-lists a.hide-link {
   font-size: 80%;
 }
