@@ -76,3 +76,9 @@ function my_custom_sizes( $sizes ) {
         'med-plus-tall' => __( 'Medium Plus Tall' )
     ) );
 }
+
+add_action( 'login_enqueue_scripts', 'tsweb_hide_login' );
+function tsweb_hide_login() {
+  wp_register_style( 'hide-login', get_stylesheet_directory_uri() . '/css/hide-login.css' );
+  wp_enqueue_style( 'hide-login' );
+}

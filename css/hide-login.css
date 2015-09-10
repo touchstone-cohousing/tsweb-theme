@@ -1,0 +1,6 @@
+form#loginform label[for=user_login],
+form#loginform label[for=user_pass],
+form#loginform p.forgetmenot,
+form#loginform p.submit {
+  display: none;
+}
