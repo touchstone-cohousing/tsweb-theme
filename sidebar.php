@@ -6,7 +6,7 @@
     <?php if (is_user_logged_in()) { ?>
       <?php wp_nav_menu( array( 'theme_location' => 'extra-menu' ) ); ?>
     <?php } else { ?>
-      <a href="/wp-login.php?redirect_to=%2F">Login</a>
+      <a href="/wp-login.php?redirect_to=<?php echo urlencode($_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]) ?>">Login</a>
     <?php } ?>
   </nav>
 
